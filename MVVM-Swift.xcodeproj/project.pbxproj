@@ -14,6 +14,8 @@
 		F2F020961E2583C000B21E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F020941E2583C000B21E72 /* LaunchScreen.storyboard */; };
 		F2F020A11E2583C000B21E72 /* MVVM_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020A01E2583C000B21E72 /* MVVM_SwiftTests.swift */; };
 		F2F020AC1E2583C000B21E72 /* MVVM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020AB1E2583C000B21E72 /* MVVM_SwiftUITests.swift */; };
+		F2F020BD1E2584A300B21E72 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BC1E2584A300B21E72 /* Car.swift */; };
+		F2F020BF1E25856E00B21E72 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BE1E25856E00B21E72 /* CarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F2F020A71E2583C000B21E72 /* MVVM-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F020AB1E2583C000B21E72 /* MVVM_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_SwiftUITests.swift; sourceTree = "<group>"; };
 		F2F020AD1E2583C000B21E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F020BC1E2584A300B21E72 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = model/Car.swift; sourceTree = "<group>"; };
+		F2F020BE1E25856E00B21E72 /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarViewModel.swift; path = viewmodel/CarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,9 @@
 		F2F0208A1E2583C000B21E72 /* MVVM-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F2F020B91E25846000B21E72 /* model */,
+				F2F020BA1E25846D00B21E72 /* viewmodel */,
+				F2F020BB1E25847300B21E72 /* view */,
 				F2F0208B1E2583C000B21E72 /* AppDelegate.swift */,
 				F2F0208D1E2583C000B21E72 /* ViewController.swift */,
 				F2F0208F1E2583C000B21E72 /* Main.storyboard */,
@@ -123,6 +130,29 @@
 				F2F020AD1E2583C000B21E72 /* Info.plist */,
 			);
 			path = "MVVM-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		F2F020B91E25846000B21E72 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F2F020BC1E2584A300B21E72 /* Car.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F2F020BA1E25846D00B21E72 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F2F020BE1E25856E00B21E72 /* CarViewModel.swift */,
+			);
+			name = viewmodel;
+			sourceTree = "<group>";
+		};
+		F2F020BB1E25847300B21E72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +294,8 @@
 			files = (
 				F2F0208E1E2583C000B21E72 /* ViewController.swift in Sources */,
 				F2F0208C1E2583C000B21E72 /* AppDelegate.swift in Sources */,
+				F2F020BD1E2584A300B21E72 /* Car.swift in Sources */,
+				F2F020BF1E25856E00B21E72 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.MVVM-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.MVVM-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
