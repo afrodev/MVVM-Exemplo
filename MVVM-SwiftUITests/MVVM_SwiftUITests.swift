@@ -33,4 +33,30 @@ class MVVM_SwiftUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testFerrariF12DataDisplayed() {
+        let app = XCUIApplication()
+        
+        // Pega a primeira tabela na UI
+        let table = app.tables.element(boundBy: 0)
+        
+        // Pega a primeira celula da tabela e testa
+        let ferrariCell = table.cells.element(boundBy: 0)
+        XCTAssert(ferrariCell.staticTexts["Ferrari F12"].exists)
+        XCTAssert(ferrariCell.staticTexts["979 HP"].exists)
+
+        
+        // Pega a segunda celula da tabela
+        let ferrariCell2 = table.cells.element(boundBy: 1)
+        XCTAssert(ferrariCell2.staticTexts["Pagani Zonda F"].exists)
+        XCTAssert(ferrariCell2.staticTexts["807 HP"].exists)
+
+        // Pega a terceira celula da tabela
+        let ferrariCel3 = table.cells.element(boundBy: 2)
+        XCTAssert(ferrariCel3.staticTexts["Lamborghini Aventador"].exists)
+        XCTAssert(ferrariCel3.staticTexts["939 HP"].exists)
+
+        
+        
+    }
+    
 }
