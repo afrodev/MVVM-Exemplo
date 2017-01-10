@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2F0208C1E2583C000B21E72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0208B1E2583C000B21E72 /* AppDelegate.swift */; };
-		F2F0208E1E2583C000B21E72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0208D1E2583C000B21E72 /* ViewController.swift */; };
 		F2F020911E2583C000B21E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0208F1E2583C000B21E72 /* Main.storyboard */; };
 		F2F020931E2583C000B21E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F020921E2583C000B21E72 /* Assets.xcassets */; };
 		F2F020961E2583C000B21E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F020941E2583C000B21E72 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,7 @@
 		F2F020AC1E2583C000B21E72 /* MVVM_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020AB1E2583C000B21E72 /* MVVM_SwiftUITests.swift */; };
 		F2F020BD1E2584A300B21E72 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BC1E2584A300B21E72 /* Car.swift */; };
 		F2F020BF1E25856E00B21E72 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BE1E25856E00B21E72 /* CarViewModel.swift */; };
+		F2F020C11E25901500B21E72 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020C01E25901500B21E72 /* CarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F2F020881E2583C000B21E72 /* MVVM-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F0208B1E2583C000B21E72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2F0208D1E2583C000B21E72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2F020901E2583C000B21E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F020921E2583C000B21E72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F020951E2583C000B21E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		F2F020AD1E2583C000B21E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F020BC1E2584A300B21E72 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = model/Car.swift; sourceTree = "<group>"; };
 		F2F020BE1E25856E00B21E72 /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarViewModel.swift; path = viewmodel/CarViewModel.swift; sourceTree = "<group>"; };
+		F2F020C01E25901500B21E72 /* CarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTableViewController.swift; path = view/CarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,6 @@
 				F2F020BA1E25846D00B21E72 /* viewmodel */,
 				F2F020BB1E25847300B21E72 /* view */,
 				F2F0208B1E2583C000B21E72 /* AppDelegate.swift */,
-				F2F0208D1E2583C000B21E72 /* ViewController.swift */,
 				F2F0208F1E2583C000B21E72 /* Main.storyboard */,
 				F2F020921E2583C000B21E72 /* Assets.xcassets */,
 				F2F020941E2583C000B21E72 /* LaunchScreen.storyboard */,
@@ -151,6 +150,7 @@
 		F2F020BB1E25847300B21E72 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F2F020C01E25901500B21E72 /* CarTableViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -292,8 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F0208E1E2583C000B21E72 /* ViewController.swift in Sources */,
 				F2F0208C1E2583C000B21E72 /* AppDelegate.swift in Sources */,
+				F2F020C11E25901500B21E72 /* CarTableViewController.swift in Sources */,
 				F2F020BD1E2584A300B21E72 /* Car.swift in Sources */,
 				F2F020BF1E25856E00B21E72 /* CarViewModel.swift in Sources */,
 			);
