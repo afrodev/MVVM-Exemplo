@@ -23,11 +23,6 @@ class MVVM_SwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
@@ -43,7 +38,7 @@ class MVVM_SwiftTests: XCTestCase {
         let ferrariViewModel = CarViewModel(car: ferrariF12)
         XCTAssertEqual(ferrariViewModel.modelText, "F12")
         XCTAssertEqual(ferrariViewModel.makeText, "Ferrari")
-        XCTAssertEqual(ferrariViewModel.horsepowerText, "730 HP")
+        XCTAssertEqual(ferrariViewModel.horsepowerText, "979 HP")
         XCTAssertEqual(ferrariViewModel.photoURL, URL(string: ferrariF12.photoURL))
         XCTAssertEqual(ferrariViewModel.titleText, "Ferrari F12")
         
