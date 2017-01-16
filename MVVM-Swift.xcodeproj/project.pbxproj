@@ -16,6 +16,7 @@
 		F2F020BD1E2584A300B21E72 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BC1E2584A300B21E72 /* Car.swift */; };
 		F2F020BF1E25856E00B21E72 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020BE1E25856E00B21E72 /* CarViewModel.swift */; };
 		F2F020C11E25901500B21E72 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020C01E25901500B21E72 /* CarTableViewController.swift */; };
+		F2F020FF1E2C45F200B21E72 /* Lanche.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F020FE1E2C45F200B21E72 /* Lanche.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F2F020BC1E2584A300B21E72 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Car.swift; path = model/Car.swift; sourceTree = "<group>"; };
 		F2F020BE1E25856E00B21E72 /* CarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarViewModel.swift; path = viewmodel/CarViewModel.swift; sourceTree = "<group>"; };
 		F2F020C01E25901500B21E72 /* CarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarTableViewController.swift; path = view/CarTableViewController.swift; sourceTree = "<group>"; };
+		F2F020FE1E2C45F200B21E72 /* Lanche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lanche.swift; path = model/Lanche.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				F2F020BC1E2584A300B21E72 /* Car.swift */,
+				F2F020FE1E2C45F200B21E72 /* Lanche.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F020FF1E2C45F200B21E72 /* Lanche.swift in Sources */,
 				F2F0208C1E2583C000B21E72 /* AppDelegate.swift in Sources */,
 				F2F020C11E25901500B21E72 /* CarTableViewController.swift in Sources */,
 				F2F020BD1E2584A300B21E72 /* Car.swift in Sources */,
@@ -548,6 +552,7 @@
 				F2F020B21E2583C000B21E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F020B31E2583C000B21E72 /* Build configuration list for PBXNativeTarget "MVVM-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +561,7 @@
 				F2F020B51E2583C000B21E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F020B61E2583C000B21E72 /* Build configuration list for PBXNativeTarget "MVVM-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +570,7 @@
 				F2F020B81E2583C000B21E72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,11 +9,27 @@
 import Foundation
 
 
-class Car {
+protocol MotorVehicle {
+    func create(vehicle: T)
+    func putMotor(vehicle: T)
+    associatedtype T
+}
+
+class Motor {
+    var motor: String
+    
+    init(motor: String) {
+        self.motor = motor
+    }
+}
+
+class Car: MotorVehicle {
     var model: String
     var make: String
     var kilowatts: Int
     var photoURL: String
+    
+    typealias T = Motor
     
     init(model: String, make: String, kilowatts: Int, photoURL: String) {
         self.model = model
@@ -21,6 +37,16 @@ class Car {
         self.kilowatts = kilowatts
         self.photoURL = photoURL
     }
+    
+    func create(vehicle: Motor) {
+        
+    }
+    
+    func putMotor(vehicle: Motor) {
+        
+    }
+    
+    
     
     
     
